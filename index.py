@@ -5,7 +5,7 @@ from dash import dcc
 from dash.dependencies import Input, Output
 
 from app import app
-from apps import home, howtouse, showcase, creator, introduction
+from apps import home, embunga, showcase, creator, introduction
 
 url_content_layout = html.Div(children=[
      dcc.Location(id="url",refresh=False),
@@ -18,7 +18,7 @@ app.validation_layout = html.Div([
      url_content_layout,
      home.home_layout,
      showcase.model_showcase_layout,
-     howtouse.dl_content,
+     embunga.page_layout,
      creator.page_layout,
      introduction.page_layout
  ])
@@ -28,8 +28,8 @@ app.validation_layout = html.Div([
 def update_output_div(pathname):
      if pathname == "/showcase":
          return  showcase.model_showcase_layout
-     elif pathname == "/howtouse":
-         return howtouse.page_layout
+     elif pathname == "/embunga":
+         return embunga.page_layout
      elif pathname == "/creator":
          return creator.page_layout
      elif pathname == "/introduction":

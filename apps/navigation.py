@@ -49,11 +49,11 @@ navbar = dbc.Navbar(
                                 dbc.NavItem(dbc.NavLink("Introduction", href="/introduction")),
                                 dbc.NavItem(dbc.DropdownMenu(
                                         children=[
-                                            dbc.DropdownMenuItem("How to use this Application", href="/howtouse")
+                                            dbc.DropdownMenuItem("Embung A", href="/embunga")
                                         ],
                                         nav=True,
                                         in_navbar=True,
-                                        label="Procedure",
+                                        label="Profil",
                                 )),
                                 dbc.NavItem(dbc.NavLink("Model Showcase", href="/showcase")),
                                 dbc.NavItem(dbc.DropdownMenu(
