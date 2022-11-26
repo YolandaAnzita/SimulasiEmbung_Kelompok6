@@ -58,3 +58,8 @@ Werkzeug==2.1.1
 wrapt==1.14.0
 zipp==3.8.0
 dash-bootstrap-components==1.0.3
+passlib==1.7.0
+SQLAIchemy==1.1.5
+Werkzeug==0.11.15
+gunicorn==19.0.0
+gevent==1.2.1
